@@ -289,25 +289,22 @@ gitment.render('container')
     
 </nav>
 
-        <div class="duoshuo">
-
-
-
-<div class="ds-thread" data-thread-key="2018/02/09/macOS下配置OpenCV3和Python2-7/" data-title="macOS下配置OpenCV3和Python2.7" data-url="http://Hoiii.github.io./2018/02/09/macOS下配置OpenCV3和Python2-7/"></div>
-<script type="text/javascript">
-	var duoshuoQuery = {short_name:"duoshuo_name"};
-	window.addEventListener('load', function(){
-		(function() {
-			var ds = document.createElement('script');
-			ds.type = 'text/javascript';ds.async = true;
-			ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-			ds.charset = 'UTF-8';
-			(document.getElementsByTagName('head')[0]
-			|| document.getElementsByTagName('body')[0]).appendChild(ds);
-		})();
-	});
+        <div class="duoshuo"><!-- Gitment评论插件通用代码 -->
+<div id="git"></div>
+<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<script>
+var gitment = new Gitment({
+  owner: "stven0king",//github用户名
+  repo: "stven0king.github.io",//用户存储评论的github项目名称
+  oauth: {
+    client_id: "xxxxxxxxxxxxxxxxxxxxxxxx",//注册OAuth Application时生产的ClinetID
+    client_secret:"xxxxxxxxxxxxxxxxxxxxx",//注册OAuth Application时生成的Client Secret
+  },
+})
+gitment.render('git')
 </script>
-</div>
+<!-- Gitment代码结束 --></div>
     </div>
 </section>
 
