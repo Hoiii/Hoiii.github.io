@@ -185,7 +185,23 @@
             </div>
         </div>
         <div class="col-md-8 col-md-offset-2">
-            <center><font size="8">About Author</font></center><br><b><br><center>隨便寫點東西，看官請隨意。</center></b>
+            <center><font size="8">About Author</font></center><br><b><br><center>隨便寫點東西，看官請隨意。</center>
+
+<p><div id="container"></div></p>
+<p><link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css"></p>
+<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<script>
+var gitment = new Gitment({
+  id: 'EDEN', // 可选。默认为 location.href
+  owner: 'Hoiii',
+  repo: 'hoiii.github.io',
+  oauth: {
+    client_id: 'd02848ed4596e1b079f6',
+    client_secret: 'c1f08f32be7d8c07c8e0b7f35e31cfce11688632',
+  },
+})
+gitment.render('container')
+</script></b>
             <div class="clearfix"></div>
         </div>
         
