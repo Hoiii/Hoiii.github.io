@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://Hoiii.github.io./"/>
-  <updated>2018-02-10T07:26:15.818Z</updated>
+  <updated>2018-02-10T18:12:23.204Z</updated>
   <id>http://Hoiii.github.io./</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Parallels Desktop安装虚拟机</title>
+    <link href="http://Hoiii.github.io./2018/02/11/Parallels-Desktop%E5%AE%89%E8%A3%85%E8%99%9A%E6%8B%9F%E6%9C%BA/"/>
+    <id>http://Hoiii.github.io./2018/02/11/Parallels-Desktop安装虚拟机/</id>
+    <published>2018-02-10T18:05:28.000Z</published>
+    <updated>2018-02-10T18:12:23.204Z</updated>
+    
+    <content type="html"><![CDATA[<p>安装Parallels Desktop 13免激活版：<br>    <a href="https://www.xp510.com/xiazai/ossoft/mactools/24960.html" target="_blank" rel="noopener">https://www.xp510.com/xiazai/ossoft/mactools/24960.html</a><br>    （亲测可用）<br>下载Windows镜像：<br>    <a href="http://msdn.itellyou.cn" target="_blank" rel="noopener">http://msdn.itellyou.cn</a><br>    进MSDN，左边栏选操作系统，选你自己喜欢的版本就好。<br><a id="more"></a><br>下载好后，打开PD 新建虚拟机，选择通过镜像安装，按提示一步一步来就好，注意安装过程中Windows展开可能会在0%处停留数分钟到十数分钟，等着就好。</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;安装Parallels Desktop 13免激活版：&lt;br&gt;    &lt;a href=&quot;https://www.xp510.com/xiazai/ossoft/mactools/24960.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://www.xp510.com/xiazai/ossoft/mactools/24960.html&lt;/a&gt;&lt;br&gt;    （亲测可用）&lt;br&gt;下载Windows镜像：&lt;br&gt;    &lt;a href=&quot;http://msdn.itellyou.cn&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;http://msdn.itellyou.cn&lt;/a&gt;&lt;br&gt;    进MSDN，左边栏选操作系统，选你自己喜欢的版本就好。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="Others" scheme="http://Hoiii.github.io./categories/Others/"/>
+    
+    
+      <category term="虚拟机" scheme="http://Hoiii.github.io./tags/%E8%99%9A%E6%8B%9F%E6%9C%BA/"/>
+    
+  </entry>
   
   <entry>
     <title>macOS下配置OpenCV3和Python2.7</title>
