@@ -3,22 +3,26 @@
 <head>
   <meta charset="utf-8">
   
-  <title>EDEN</title>
+  <title>動態規劃（杭電oj1003） | EDEN</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
+  <meta name="keywords" content="OJ" />
   
   
   
-  <meta name="description" content="PULL THE TRIGGER">
-<meta property="og:type" content="website">
-<meta property="og:title" content="EDEN">
-<meta property="og:url" content="http://Hoiii.github.io./index.html">
+  
+  <meta name="description" content="先上代碼，有時間再寫分析。這裡用的C++:123456789101112131415161718192021222324252627282930313233#include&amp;lt;iostream&amp;gt;using namespace std;int main()&amp;#123;    int T, n, a[100001], i, cont = 0;	//T:表示T組用例；n:表示該用例含n個數；c">
+<meta name="keywords" content="OJ">
+<meta property="og:type" content="article">
+<meta property="og:title" content="動態規劃（杭電OJ1003）">
+<meta property="og:url" content="http://Hoiii.github.io./2018/02/11/動態規劃（杭電OJ1003）/index.html">
 <meta property="og:site_name" content="EDEN">
-<meta property="og:description" content="PULL THE TRIGGER">
+<meta property="og:description" content="先上代碼，有時間再寫分析。這裡用的C++:123456789101112131415161718192021222324252627282930313233#include&amp;lt;iostream&amp;gt;using namespace std;int main()&amp;#123;    int T, n, a[100001], i, cont = 0;	//T:表示T組用例；n:表示該用例含n個數；c">
 <meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2018-02-11T15:06:39.523Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="EDEN">
-<meta name="twitter:description" content="PULL THE TRIGGER">
+<meta name="twitter:title" content="動態規劃（杭電OJ1003）">
+<meta name="twitter:description" content="先上代碼，有時間再寫分析。這裡用的C++:123456789101112131415161718192021222324252627282930313233#include&amp;lt;iostream&amp;gt;using namespace std;int main()&amp;#123;    int T, n, a[100001], i, cont = 0;	//T:表示T組用例；n:表示該用例含n個數；c">
   
     <link rel="alternate" href="/atom.xml" title="EDEN" type="application/atom+xml">
   
@@ -47,11 +51,13 @@
   <link rel="stylesheet" href="/css/bootstrap.css" >
 
   
-    <link rel="stylesheet" href="/css/home.css" >
+    <link rel="stylesheet" href="/css/dialog.css">
   
 
   
 
+  
+    <link rel="stylesheet" href="/css/header-post.css" >
   
 
   
@@ -64,169 +70,107 @@
 
 
 
-  <body>
+  <body data-spy="scroll" data-target="#toc" data-offset="50">
 
 
-  
-    <header id="header">
-
-	<!-- 背景图模式 -->
-	
-
-    
-      <div id="intrologo" class="intro-logo" style="background-position:center; background-repeat:no-repeat; background-image: url(); background-size: auto 100%;">
-
-      <!-- Support rolling -->  
-        
-        <section class="awSlider">
-          <div class="carousel slide carousel-fade " data-ride="carousel">
-
-            <!-- Wrapper for slides -->
-            <div class="carousel-inner">
-               
-                  
-                    <div class="item active">
-                  
-                    <img id="carousel-img0" src="/css/images/bg.jpg">
-                  </div>
-
-                  <!-- 自适应大图 -->
-                  <script>
-                      var img0 = new Image();
-                      var imageTag0 = document.getElementById("carousel-img0");
-                      img0.src = imageTag0.src;
-                      img0.onload=function(){
-                        if (img0.width / img0.height <= document.body.clientWidth / document.body.clientHeight) {
-                          imageTag0.style.width = document.body.clientWidth + "px";
-                        } else {
-                          imageTag0.style.height = document.body.clientHeight + "px";
-                          imageTag0.style.marginLeft = -(document.body.clientHeight * img0.width / img0.height - document.body.clientWidth) / 2 + "px";
-                        }
-                      };
-                  </script>
-                
-            </div>
-
-            <!-- Controls -->
-            <a class="left carousel-control" href=".carousel" role="button" data-slide="prev">
-              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-              <span class="sr-only">Geri</span>
-            </a>
-            <a class="right carousel-control" href=".carousel" role="button" data-slide="next">
-              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-              <span class="sr-only">İleri</span>
-            </a>
-          </div>
-        </section>
-        <script>
-          $('section.awSlider .carousel').carousel({
-              pause: '',
-              interval: 5000
-          });
-          var startImage = $('section.awSlider .item.active > img').attr('src');
-          $('section.awSlider .carousel').on('slid.bs.carousel', function () {
-              var bscn = $(this).find('.item.active > img').attr('src');
-              $('section.awSlider > img').attr('src', bscn);
-          });
-        </script>
-      
-
-    
- 
-
-
-    <canvas width="100%" height="100%"></canvas>
-    <script>
-      var c = document.getElementsByTagName('canvas')[0],
-          x = c.getContext('2d'),
-          w = window.innerWidth,
-          h = window.innerHeight,
-          pr = window.devicePixelRatio || 1,
-          f = 90,
-          q,
-          m = Math,
-          r = 0,
-          u = m.PI*2,
-          v = m.cos,
-          z = m.random
-      c.width = w*pr
-      c.height = h*pr
-      x.scale(pr, pr)
-      x.globalAlpha = 0.6
-
-      <!-- 折线Polyline背景 -->
-      
-    </script>
-    
-
-    
-      <div id="homelogo" class="homelogo" style="background: rgba(255,255,255,1);"> 
-    
-
-        
-          <div class="homelogoback"  style="border: 1px solid #404040;" >
-            <h1><a href="#content" id="logo">EDEN</a></h1>
-            <h3>PULL THE TRIGGER</h3>
-            <h5>Hoi</h5>
-            <!-- <p><a href="https://github.com/iTimeTraveler" target="_blank">Github</a></p> -->
-          </div>
-        
-    
-    </div>
-  </div>
-
-  <!-- 自适应主页背景大图 -->
-  
-
- <!-- home_logo_image居中 -->
- 
-    <script>
-        var homelogodiv = document.getElementById("homelogo");
-        if (document.all.homelogo.offsetWidth > document.body.clientWidth) {
-          homelogodiv.style.width = document.body.clientWidth + "px";
-          homelogodiv.style.marginLeft = document.body.clientWidth * -0.5 + "px";
-        } else {
-          homelogodiv.style.width = homelogodiv.clientWidth  + "px";
-          homelogodiv.style.marginLeft = (homelogodiv.clientWidth)  * -0.5 + "px";
-        }
-    </script>
-  
-
-  <div class="intro-navigate">
-      <p class="navigater-list">
-        
-          <a id="beautifont" class="main-nav-link" href="/">Home</a>
-        
-          <a id="beautifont" class="main-nav-link" href="/archives">Archives</a>
-        
-          <a id="beautifont" class="main-nav-link" href="/categories">Categories</a>
-        
-          <a id="beautifont" class="main-nav-link" href="/tags">Tags</a>
-        
-          <a id="beautifont" class="main-nav-link" href="/about">About</a>
-        
-      </p>
-  </div>
-
-</header>
   
   <div id="container">
     <div id="wrap">
       
+        <header>
+
+    <div id="allheader" class="navbar navbar-default navbar-static-top" role="navigation">
+        <div class="navbar-inner">
+          
+          <div class="container"> 
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+
+            
+              <a class="brand" style="
+                 border-width: 0px;  margin-top: 10px;"  
+                href="#" data-toggle="modal" data-target="#myModal" >
+                  <img width="70px" height="70px" alt="Hike News" src="/css/images/mylogo.png">
+              </a>
+            
+            
+            <div class="navbar-collapse collapse">
+              <ul class="hnav navbar-nav">
+                
+                  <li> <a class="main-nav-link" href="/">Home</a> </li>
+                
+                  <li> <a class="main-nav-link" href="/archives">Archives</a> </li>
+                
+                  <li> <a class="main-nav-link" href="/categories">Categories</a> </li>
+                
+                  <li> <a class="main-nav-link" href="/tags">Tags</a> </li>
+                
+                  <li> <a class="main-nav-link" href="/about">About</a> </li>
+                
+                  <li><div id="search-form-wrap">
+
+    <form class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder="" />
+        <button type="submit" class="search-form-submit"></button>
+    </form>
+    <div class="ins-search">
+    <div class="ins-search-mask"></div>
+    <div class="ins-search-container">
+        <div class="ins-input-wrapper">
+            <input type="text" class="ins-search-input" placeholder="Type something..." />
+            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: 'Posts',
+            PAGES: 'Pages',
+            CATEGORIES: 'Categories',
+            TAGS: 'Tags',
+            UNTITLED: '(Untitled)',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+<script src="/js/insight.js"></script>
+
+</div></li>
+            </div>
+          </div>
+                
+      </div>
+    </div>
+
+</header>
+
+
+
+      
             
       <div id="content" class="outer">
         
-          <section id="main" style="float:none;">
-  
-    <article id="post-動態規劃（杭電OJ1003）"  class="article article-type-post" itemscope itemprop="blogPost" >
+          <section id="main" style="float:none;"><article id="post-動態規劃（杭電OJ1003）" style="width: 75%; float:left;" class="article article-type-post" itemscope itemprop="blogPost" >
   <div id="articleInner" class="article-inner">
     
     
       <header class="article-header">
         
   
-    <h1 class="thumb" itemprop="name">
-      <a class="article-title" href="/2018/02/11/動態規劃（杭電OJ1003）/">動態規劃（杭電OJ1003）</a>
+    <h1 class="thumb" class="article-title" itemprop="name">
+      動態規劃（杭電OJ1003）
     </h1>
   
 
@@ -242,6 +186,12 @@
     <a class="article-category-link" href="/categories/OJ/">OJ</a>
 
       
+	<a class="article-views">
+	<span id="busuanzi_container_page_pv">
+		PV:<span id="busuanzi_value_page_pv"></span>
+	</span>
+	</a>
+
     </div>
     <div class="article-entry" itemprop="articleBody">
       
@@ -251,6 +201,39 @@
     </div>
     <footer class="article-footer">
       
+        <div id="donation_div"></div>
+
+<script src="/js/vdonate.js"></script>
+<script>
+var a = new Donate({
+  title: '看官請隨意。', // 可选参数，打赏标题
+  btnText: 'Donate', // 可选参数，打赏按钮文字
+  el: document.getElementById('donation_div'),
+  wechatImage: 'https://raw.githubusercontent.com/Hoiii/markdown_photos/master/IMG_5817.jpg',
+  alipayImage: 'https://raw.githubusercontent.com/Hoiii/markdown_photos/master/IMG_5818.JPG'
+});
+</script>
+      
+      
+        <!-- 来必力City版安装代码 -->
+<div id="lv-container" data-id="city" data-uid="MTAyMC8zNDA2Mi8xMDYwMA==">
+	<script type="text/javascript">
+   (function(d, s) {
+       var j, e = d.getElementsByTagName(s)[0];
+
+       if (typeof LivereTower === 'function') { return; }
+
+       j = d.createElement(s);
+       j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+       j.async = true;
+
+       e.parentNode.insertBefore(j, e);
+   })(document, 'script');
+	</script>
+<noscript> 为正常使用来必力评论功能请激活JavaScript</noscript>
+</div>
+<!-- City版安装代码已完成 -->
+
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/OJ/">OJ</a></li></ul>
@@ -258,130 +241,33 @@
     </footer>
   </div>
   
-</article>
-
-<!-- Table of Contents -->
-
-  
-    <article id="post-Parallels-Desktop安装虚拟机"  class="article article-type-post" itemscope itemprop="blogPost" >
-  <div id="articleInner" class="article-inner">
     
-    
-      <header class="article-header">
-        
+<nav id="article-nav">
   
-    <h1 class="thumb" itemprop="name">
-      <a class="article-title" href="/2018/02/11/Parallels-Desktop安装虚拟机/">Parallels Desktop安装虚拟机</a>
-    </h1>
   
+    <a href="/2018/02/11/Parallels-Desktop安装虚拟机/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Parallels Desktop安装虚拟机</div>
+    </a>
+  
+</nav>
 
-      </header>
-    
-    <div class="article-meta">
-      
-	<a href="/2018/02/11/Parallels-Desktop安装虚拟机/" class="article-date">
-	  <time datetime="2018-02-10T18:05:28.000Z" itemprop="datePublished">2018-02-11</time>
-	</a>
-
-      
-    <a class="article-category-link" href="/categories/Others/">Others</a>
-
-      
-    </div>
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>安装Parallels Desktop 13免激活版：<br>    <a href="https://www.xp510.com/xiazai/ossoft/mactools/24960.html" target="_blank" rel="noopener">https://www.xp510.com/xiazai/ossoft/mactools/24960.html</a><br>    （亲测可用）<br>下载Windows镜像：<br>    <a href="http://msdn.itellyou.cn" target="_blank" rel="noopener">http://msdn.itellyou.cn</a><br>    进MSDN，左边栏选操作系统，选你自己喜欢的版本就好。<br>
-        <!-- 安装Parallels Desktop 13免激活版：    https://www.xp510.com/xiazai/ossoft/mactools/24960.html    （亲测可用）下载Windows镜像：    http://msdn.itellyou.cn    进MSDN，左边栏选操作系统，选你自己喜欢的版本就好。下载好后，打开PD 新建虚拟机，选择通过镜像安装，按提示一步一......  -->
-        <p class="article-more-link">
-          <a href="/2018/02/11/Parallels-Desktop安装虚拟机/#more">Read More</a>
-        </p>
-      
-    </div>
-    <footer class="article-footer">
-      
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/虚拟机/">虚拟机</a></li></ul>
-
-    </footer>
-  </div>
   
 </article>
 
 <!-- Table of Contents -->
 
-  
-    <article id="post-macOS下配置OpenCV3和Python2-7"  class="article article-type-post" itemscope itemprop="blogPost" >
-  <div id="articleInner" class="article-inner">
+  <aside id="toc-sidebar">
+    <div id="toc" class="toc-article">
+    <strong class="toc-title">Contents</strong>
     
+        <ol class="nav">None</ol>
     
-      <header class="article-header">
-        
-  
-    <h1 class="thumb" itemprop="name">
-      <a class="article-title" href="/2018/02/09/macOS下配置OpenCV3和Python2-7/">macOS下配置OpenCV3和Python2.7</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-meta">
-      
-	<a href="/2018/02/09/macOS下配置OpenCV3和Python2-7/" class="article-date">
-	  <time datetime="2018-02-09T11:20:20.000Z" itemprop="datePublished">2018-02-09</time>
-	</a>
-
-      
-    <a class="article-category-link" href="/categories/OpenCV/">OpenCV</a>
-
-      
     </div>
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>#Step 1:</p>
-<pre><code>安装Xcode，这个不解释，自行移步App Store下载安装。（command line tool也必须安装。）
-</code></pre><p>#Step 2:</p>
-<pre><code>安装Homebrew。
-打开终端：
-
-$ cd
-$ ruby -e &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)&quot;
-$ brew update
-</code></pre>
-        <!-- #Step 1:
-安装Xcode，这个不解释，自行移步App Store下载安装。（command line tool也必须安装。）
-#Step 2:
-安装Homebrew。
-打开终端：
-
-$ cd
-$ ruby -e &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)&q......  -->
-        <p class="article-more-link">
-          <a href="/2018/02/09/macOS下配置OpenCV3和Python2-7/#more">Read More</a>
-        </p>
-      
-    </div>
-    <footer class="article-footer">
-      
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/OpenCV/">OpenCV</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-<!-- Table of Contents -->
-
-  
-
-
+  </aside>
 </section>
         
       </div>
-      
-        <div align="center" style="margin-top: 30px;"><hr class="hr" style="margin:0px; height:3px;"></div>
       
       <footer id="footer">
   
@@ -473,9 +359,9 @@ $ ruby -e &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/
 <script src="/js/scripts.js"></script>
 
 
-  <script src="/js/home.js"></script>
 
 
+  <script src="/js/dialog.js"></script>
 
 
 
@@ -560,6 +446,8 @@ $ ruby -e &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/
   
   <a id="rocket" href="#top" class=""></a>
   <script type="text/javascript" src="/js/totop.js?v=1.0.0" async=""></script>
+  
+    <a id="menu-switch"><i class="fa fa-bars fa-lg"></i></a>
   
 </body>
 </html>
